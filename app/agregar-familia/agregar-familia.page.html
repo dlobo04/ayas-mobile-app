@@ -1,0 +1,61 @@
+   <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Guardar Datos de Hijo</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding class="centrado">
+        <ion-item>
+          <ion-label position="floating">Nombre (o Alias)</ion-label>
+          <ion-input placeholder="Ej. Pepe"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Parentesco</ion-label>
+          <ion-select interface="action-sheet" cancel-text="Cancelar" placeholder="¿el niño/niña es mi?">
+            <ion-select-option value="santa cruz">Hijo</ion-select-option>
+            <ion-select-option value="la paz">Sobrino</ion-select-option>
+            <ion-select-option value="la paz">Primo</ion-select-option>
+            <ion-select-option value="la paz">Hermano</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Sexo</ion-label>
+          <ion-select interface="action-sheet" cancel-text="Cancelar">
+            <ion-select-option value="santa cruz">Hombre</ion-select-option>
+            <ion-select-option value="la paz">Mujer</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">¿Necesidad educativa especial?</ion-label>
+          <ion-select interface="action-sheet" cancel-text="Cancelar">
+            <ion-select-option value="santa cruz">No</ion-select-option>
+            <ion-select-option value="la paz">Síndrome de Down</ion-select-option>
+            <ion-select-option value="la paz">Autismo</ion-select-option>
+            <ion-select-option value="la paz">TDH</ion-select-option>
+          </ion-select>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Mes y Año de Nacimiento</ion-label>
+          <ion-datetime display-format="MMM YYYY" placeholder="Ej. Abr 2017" done-text="OK" cancel-text="Cancelar" month-short-names="En, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Condiciones Médicas</ion-label>
+          <ion-textarea rows="6" placeholder="Indique si el niño/a tiene alguna condición médica especial"></ion-textarea>
+        </ion-item>
+
+        <br />
+        <ion-button color="primary" expand="full" (click)="guardar()" size="medium">
+          <ion-icon slot="start" name="person-add"></ion-icon>
+          Registrar
+        </ion-button>
+    </ion-content>

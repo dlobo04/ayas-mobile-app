@@ -1,0 +1,28 @@
+	<ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Ubicación</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+<ion-content>
+
+      <ion-list>
+        <ion-item>
+          <ion-input type="text" placeholder="Escriba la Dirección"></ion-input>
+        </ion-item>
+      </ion-list>
+      
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7597.266828437068!2d-63.189089278977974!3d-17.808917751308925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e83745e7556f%3A0xb2e4af6374fd01f1!2sBraniff%2C+Santa+Cruz+de+la+Sierra!5e0!3m2!1ses-419!2sbo!4v1563246939694!5m2!1ses-419!2sbo" width="300" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="siguiente()">
+          <ion-icon name="arrow-dropright"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+</ion-content>

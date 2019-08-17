@@ -1,0 +1,30 @@
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Confirmar Email</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding class="centrado">
+        
+        <br />
+        <h3>Revisa tu Bandeja de Entrada, te enviamos tu Código de Activación al email:
+          <br />
+        <strong>{{form.email}}</strong></h3>
+        <br />
+        <div style="text-align: center; width: 100%;">
+          <img src="assets/logoEmail.png" style="width: 40%;" />
+        </div>
+
+        <br />
+
+        <ion-item>
+          <ion-label position="floating">Código de Activación</ion-label>
+          <ion-input type="number" placeholder="Ej. 123"></ion-input>
+        </ion-item>
+
+        <ion-button color="primary" expand="full" (click)="confirmarEmail()" size="medium">
+          <ion-icon slot="start" name="checkmark-circle"></ion-icon>
+          Validar Código
+        </ion-button>
+
+    </ion-content>

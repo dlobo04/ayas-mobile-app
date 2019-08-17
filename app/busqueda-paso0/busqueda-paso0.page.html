@@ -1,0 +1,77 @@
+	<ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Ayas Mitaí</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+<ion-content>
+
+      <ion-button expand="full" color="primary" size="medium" href="#!/busqueda-paso1">
+          <ion-icon slot="start" name="search"></ion-icon>
+              Búsqueda
+      </ion-button>
+
+      <!-- Tareas Pendientes -->
+      <ion-list>
+        <ion-list-header>
+          <ion-label><h1>Tareas Pendientes</h1></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-icon slot="start" name="nuclear"></ion-icon>
+          <ion-label>Consejos de Seguridad</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="checkmark-circle"></ion-icon>
+          <ion-label>Verificar tu cuenta</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="mail-unread"></ion-icon>
+          <ion-label>Nos gustaría saber tu opinión</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <!-- Ayas en tu Ciudad -->
+      <ion-list>
+        <ion-list-header>
+          <ion-label><h1>En tu ciudad</h1></ion-label>
+        </ion-list-header>
+        
+        <ion-item>
+          <ion-row>
+            <ion-col class="centrado">
+              <img style="max-height: 120px;" src="assets/antonella.jpg" />
+              <span>Andrea Perez</span>
+              <br />
+              <span style="font-size: 12px;">3 años a 5 años / 5 años a 7 años</span>
+            </ion-col>
+            <ion-col offset-4 class="centrado">
+              <img style="max-height: 120px;" src="assets/wonderwoman.jpg" />
+              <span>Joan de Arcadia</span>
+              <br />
+              <span style="font-size: 12px;">1 años a 10 años</span>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item>
+          <ion-row>
+            <ion-col class="centrado">
+              <img style="max-height: 120px;" src="assets/wonderwoman.jpg" />
+              <span>Camila Soruco</span>
+              <br />
+              <span style="font-size: 12px;">3 meses a 3 años / 3 años a 5 años</span>
+            </ion-col>
+            <ion-col offset-4 class="centrado">
+              <img style="max-height: 120px;" src="assets/antonella.jpg" />
+              <span>Mariana Ojopi</span>
+              <br />
+              <span style="font-size: 12px;">3 años a 5 años</span>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+</ion-content>
