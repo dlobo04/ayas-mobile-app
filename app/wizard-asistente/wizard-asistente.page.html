@@ -1,0 +1,56 @@
+
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="end">
+                <ion-button id="btnMenu" (click)="descartar()">
+                    <ion-icon slot="icon-only" name="close-circle"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Asistente de Registro</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+<ion-content padding class="centrado">
+
+
+<div class="container">
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content" (click)="subirDocumento('ci')">
+         <h3>Paso 1</h3>
+         <span>Carnet de Identidad</span>
+         <p>Sube una copia de tu Carnet de Identidad vigente</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content" (click)="subirDocumento('examen')">
+         <h3>Paso 2</h3>
+         <span>Test Psicoténico</span>
+         <p>Toma el Examen Psicotécnico en la misma aplicación</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content" (click)="subirDocumento('antecedentes')">
+         <h3>Paso 3</h3>
+         <span>Certificado de Antecedentes</span>
+         <p>Sube una copia de tu Certificado de Antecedentes Policiales</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content" (click)="subirDocumento('capacitacion')">
+         <h3>Paso 4</h3>
+         <span>Capacitación Virtual</span>
+         <p>Certificate a través de nuestras Capacitaciones en línea</p>
+      </div>
+   </div>
+
+</div>
+
+</ion-content>
