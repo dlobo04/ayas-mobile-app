@@ -1,0 +1,60 @@
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Registro de Padres</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding class="centrado">
+        <br />
+
+        <ion-item>
+          <ion-label position="floating">Nombres y Apellidos</ion-label>
+          <ion-input type="text" placeholder="Ej. Daniel Lobo" [(ngModel)]="form.txbNombre"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Cumpleaños</ion-label>
+          <ion-datetime [(ngModel)]="form.txbFecha" display-format="DD/MMM/YYYY" placeholder="Ej. 04/Abr/1987" done-text="OK" cancel-text="Cancelar" month-short-names="En, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ciudad de Residencia</ion-label>
+          <ion-select placeholder="Ej. Santa Cruz" interface="action-sheet" cancel-text="Cancelar">
+            <ion-select-option value="santa cruz">Santa Cruz</ion-select-option>
+            <ion-select-option value="la paz">La Paz</ion-select-option>
+            <ion-select-option value="cochabamba">Cochabamba</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item-divider color="medium">
+          <ion-label>
+            Datos de acceso
+          </ion-label>
+        </ion-item-divider>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="Email" placeholder="Ej. papa@gmail.com" [(ngModel)]="form.txbEmail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" placeholder="Ej. micontrasenha"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Repetir Contraseña</ion-label>
+          <ion-input type="password" placeholder="Ej. micontrasenha"></ion-input>
+        </ion-item>
+
+        <br />
+        <ion-button color="primary" expand="full" (click)="registro()" size="medium">
+          <ion-icon slot="start" name="person-add"></ion-icon>
+          Registrase
+        </ion-button>
+    </ion-content>

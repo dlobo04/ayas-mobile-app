@@ -1,0 +1,48 @@
+    <!-- Menu -->
+    <ion-menu side="end" content-id="cPrincipal" menuId="menuPrincipal">
+      <ion-header>
+        <ion-toolbar translucent color="primary">
+          <ion-title>Opciones</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item (click)="inicio()">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Inicio</ion-label>
+          </ion-item>
+          <ion-item (click)="miPerfil()">
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>Mi Perfil</ion-label>
+          </ion-item>
+          <ion-item (click)="capacitaciones()">
+            <ion-icon name="mail-unread" slot="start"></ion-icon>
+            <ion-label>Capacitaciones & Cursos</ion-label>
+          </ion-item>
+          <ion-item (click)="cerrarSesion()">
+            <ion-icon name="close-circle" slot="start"></ion-icon>
+            <ion-label>Cerrar Sesión</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+<ion-router-outlet main></ion-router-outlet>
+
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="end">
+                <ion-button id="btnMenu" (click)="abrirMenu()">
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Ayas Mitaí</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content id="cPrincipal" class="textoCentrado" padding forceOverscroll scrollY>
+        
+        <h2 class="textoTitulo">DASHBOARD DE ASISTENTE</h2>
+
+    </ion-content>
+

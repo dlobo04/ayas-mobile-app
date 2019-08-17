@@ -1,0 +1,132 @@
+    <!-- Menu -->
+    <ion-menu side="end" content-id="cPrincipal" menuId="menuPrincipal">
+      <ion-header>
+        <ion-toolbar translucent color="primary">
+          <ion-title>Opciones</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item (click)="inicio()">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Inicio</ion-label>
+          </ion-item>
+          <ion-item (click)="miPerfil()">
+            <ion-icon name="person" slot="start"></ion-icon>
+            <ion-label>Mi Perfil</ion-label>
+          </ion-item>
+          <ion-item (click)="sugerencias()">
+            <ion-icon name="mail-unread" slot="start"></ion-icon>
+            <ion-label>Sugerencias</ion-label>
+          </ion-item>
+          <ion-item (click)="cerrarSesion()">
+            <ion-icon name="close-circle" slot="start"></ion-icon>
+            <ion-label>Cerrar Sesión</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+<ion-router-outlet main></ion-router-outlet>
+
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="end">
+                <ion-button id="btnMenu" (click)="abrirMenu()">
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Ayas Mitaí</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content id="cPrincipal" class="textoCentrado" padding forceOverscroll scrollY>
+        
+        <img src="/assets/panelPadre.jpg">
+        <ion-button fill="clear" expand="full" color="primary" size="medium" (click)="contratar()">
+          <ion-icon slot="start" name="search"></ion-icon>
+              Contratar Asistente Infantil
+        </ion-button>
+
+        <h2 class="textoTitulo">HISTORIAL DE RESERVAS</h2>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>05-07-2019 15:00</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/mark.jpg">
+              </ion-avatar>
+               <ion-label text-wrap>
+                <h3><strong>Asistente:</strong> Daniela Prado</h3>
+                <h3><strong>Puntuación:</strong> 
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </h3>
+                <h3><strong>Recomendación:</strong> Buen servicio, llegó a tiempo</h3>
+              </ion-label>
+            </ion-item>
+            <ion-button fill="clear" expand="full" color="primary" size="medium" (click)="verDetalle()">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Ver detalles
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>06-07-2019 19:00</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/gal.jpg">
+              </ion-avatar>
+              <ion-label text-wrap>
+                <h3><strong>Asistente:</strong> Gal Gadott</h3>
+                <h3><strong>Puntuación:</strong> 
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </h3>
+                <h3><strong>Recomendación:</strong> Excelente 5 puntos</h3>
+              </ion-label>
+            </ion-item>
+            <ion-button fill="clear" expand="full" color="primary" size="medium" (click)="verDetalle()">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Ver detalles
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>12-07-2019 13:00</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="/assets/antonella.jpg">
+              </ion-avatar>
+              <ion-label text-wrap>
+                <h3><strong>Asistente:</strong> Antonella Rocuso</h3>
+                <h3><strong>Puntuación:</strong> 
+                  <ion-icon name="star"></ion-icon>
+                </h3>
+                <h3><strong>Recomendación:</strong> Llegó casi media hora tarde</h3>
+              </ion-label>
+            </ion-item>
+            <ion-button fill="clear" expand="full" color="primary" size="medium" (click)="verDetalle()">
+              <ion-icon slot="start" name="calendar"></ion-icon>
+              Ver detalles
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+    </ion-content>
+

@@ -1,0 +1,49 @@
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" href="#!/">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Ayas Mitai</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding class="centrado">
+        <br />
+        <br />
+        <img src="assets/banner-interno.jpg" />
+        <br />
+        <br />
+        <ion-list>
+              <ion-radio-group [(ngModel)]="form.rTipo">
+                <ion-list-header>
+                  <ion-label>Selecciona una opción</ion-label>
+                </ion-list-header>
+
+                <ion-item>
+                  <ion-label>Soy Papa</ion-label>
+                  <ion-radio name="rPapa" slot="start" value="padre"></ion-radio>
+
+                  <ion-label>Soy Mama</ion-label>
+                  <ion-radio name="rMama" slot="end" value="madre"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Quiero ser Asistente Infantil</ion-label>
+                  <ion-radio name="rAsistente" slot="start" value="ai"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+        </ion-list>
+
+        <br />
+        <ion-button expand="full" color="primary" (click)="siguiente()" size="large">
+          <ion-icon slot="start" name="arrow-dropright-circle"></ion-icon>
+          Siguiente
+        </ion-button>
+    </ion-content>
+
+    <ion-footer>
+      <ion-toolbar color="primary">
+        <ion-title>© Ayas Mitai - Asistentes Infantiles</ion-title>
+      </ion-toolbar>
+    </ion-footer>

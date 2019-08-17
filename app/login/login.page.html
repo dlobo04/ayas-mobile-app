@@ -1,0 +1,43 @@
+	<ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Iniciar Sesion</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+	<ion-content padding class="centrar">
+      <br />
+      <br />
+      <div style="width: 100%; text-align: center;">
+		    <img src="assets/ayasLogoA1.png" style="width: 90%;" />
+      </div>
+      <br />
+      <br />
+	    <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" name="txbDato">
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <br />
+
+	    <ion-button color="primary" (click)="iniciarSesion()" size="medium">
+	    	<ion-icon slot="start" name="contact"></ion-icon>
+	    	Inicia Sesión
+	    </ion-button>
+
+      <br />
+      <br />
+      <div style="width: 100%; text-align: center;">
+        <a (click)="registroPadre()">Soy Nuevo</a>
+      </div>
+
+	</ion-content>

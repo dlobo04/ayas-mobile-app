@@ -1,0 +1,40 @@
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Registro de Asistentes</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding class="centrado">
+        <br />
+        <ion-item-divider color="medium">
+          <ion-label>
+            Datos de acceso
+          </ion-label>
+        </ion-item-divider>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="Email" placeholder="Ej. liz123@gmail.com" [(ngModel)]="form.txbEmail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input placeholder="Ej. tucontrasenha" type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Repetir Contraseña</ion-label>
+          <ion-input placeholder="Ej. tucontrasenha" type="password"></ion-input>
+        </ion-item>
+
+        <br />
+        <ion-button color="primary" expand="full" (click)="registro()" size="medium">
+          <ion-icon slot="start" name="person-add"></ion-icon>
+          Registrarse
+        </ion-button>
+    </ion-content>

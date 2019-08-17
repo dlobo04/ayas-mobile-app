@@ -1,0 +1,40 @@
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button id="btnMenu" (click)="volver()">
+                    <ion-icon slot="icon-only" name="arrow-round-back"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>Subir Documentos</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+<ion-content>
+
+<ion-list>
+  <ion-item>
+    <h2>{{form.tipoDocumento}}</h2>
+  </ion-item>
+
+  <ion-item>
+    <p>{{form.descripcionDocumento}}</p>
+  </ion-item>
+
+  <ion-button color="primary" fill="solid" expand="full" ng-click="buscarFoto(fileLoader)" size="large">
+        <ion-icon slot="start" name="document"></ion-icon>
+        Buscar Archivo
+      </ion-button>
+  
+  <br />
+  <br />
+
+  <ion-item>
+          <ion-icon slot="start" name="alert"></ion-icon>
+          <ion-text>{{form.tipDocumento}}</ion-text>
+  </ion-item>
+
+</ion-list>
+
+
+      
+</ion-content>
